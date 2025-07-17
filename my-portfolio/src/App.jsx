@@ -690,27 +690,27 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Task Management Dashboard",
-      image: "/assets/images/1.png",
-      skills: ["React", "Firebase", "Tailwind CSS"],
-      github: "https://github.com/pattapu-22/task-dashboard",
-      demo: "https://demo-link.com"
+      title: "Collegoim - A AI chatbot",
+      image: "/assets/images/2.png",
+      skills: ["React","Tailwind CSS"],
+      github: "https://github.com/pattapu-22/Colllegium_bot.git",
+      //demo: "https://demo-link.com"
     },
     {
       id: 3,
-      title: "Weather Forecast App",
-      image: "/assets/images/1.png",
-      skills: ["React", "OpenWeather API", "Chart.js"],
-      github: "https://github.com/pattapu-22/weather-app",
-      demo: "https://demo-link.com"
+      title: "ArgoNXT Next-gen agriculture",
+      image: "/assets/images/3.jpg",
+      skills: ["Flutter", "Firebase", "Dart"],
+      github: "https://github.com/pattapu-22/AgroNXT.git",
+      //demo: "https://demo-link.com"
     },
     {
       id: 4,
-      title: "Social Media Platform",
-      image: "/assets/images/1.png",
-      skills: ["React", "Node.js", "MongoDB"],
-      github: "https://github.com/pattapu-22/social-platform",
-      demo: "https://demo-link.com"
+      title: "Modern Fitness",
+      image: "/assets/images/4.jpg",
+      skills: ["Flutter", "Firebase", "Dart", "MongoDB"],
+      github: "https://github.com/pattapu-22/modern_fitness.git",
+      //demo: "https://demo-link.com"
     }
   ];
 
