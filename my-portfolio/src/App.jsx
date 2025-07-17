@@ -524,52 +524,56 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 px-6 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 
-            className={`text-6xl font-bold mb-12 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent transition-all duration-1000 ${
-              visibleSections.has('contact-title') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-            id="contact-title"
-            data-animate
-            style={{ fontFamily: 'Arial, sans-serif' }}
-          >
-            Let's Connect
-          </h2>
-          <div 
-            className={`transition-all duration-1000 delay-300 ${
-              visibleSections.has('contact-title') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            <p className="text-2xl text-gray-300 mb-16">
-              Connect with me through
-            </p>
-            <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
-              <a
-                href="mailto:pattapu22@gmail.com"
-                className="p-6 bg-gray-700 rounded-full hover:bg-gray-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
-              >
-                <Mail size={28} />
-                {/* <span className="text-xl">pattapu22@gmail.com</span> */}
-              </a>
-              <div className="flex space-x-8">
-                <a
-                  href="https://github.com/pattapu-22"
-                  className="p-6 bg-gray-800 rounded-full hover:bg-gray-700 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
-                >
-                  <Github size={32} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/pattapu22"
-                  className="p-6 bg-gray-700 rounded-full hover:bg-gray-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
-                >
-                  <Linkedin size={32} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="contact" className="py-12 px-6 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+  <div className="max-w-6xl mx-auto text-center space-y-6">
+    <h2
+      className={`text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent transition-all duration-1000 ${
+        visibleSections.has('contact-title') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}
+      id="contact-title"
+      data-animate
+      style={{ fontFamily: 'Arial, sans-serif' }}
+    >
+      Let's Connect
+    </h2>
+
+    <div
+      className={`transition-all duration-1000 delay-300 ${
+        visibleSections.has('contact-title') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}
+    >
+      <p className="text-lg text-gray-300 mb-4">
+        Connect with me through
+      </p>
+
+      <div className="flex justify-center items-center space-x-8">
+        <a
+          href="mailto:pattapu22@gmail.com"
+          className="p-4 bg-gray-700 rounded-full hover:bg-gray-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+        >
+          <Mail size={24} />
+        </a>
+        <a
+          href="https://github.com/pattapu-22"
+          className="p-4 bg-gray-800 rounded-full hover:bg-gray-700 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+        >
+          <Github size={28} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/pattapu22"
+          className="p-4 bg-gray-700 rounded-full hover:bg-gray-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl"
+        >
+          <Linkedin size={28} />
+        </a>
+      </div>
+    </div>
+
+    <p className="text-sm text-gray-400 pt-4 border-t border-gray-700 mt-4">
+      © {new Date().getFullYear()} Pattapu. All rights reserved.
+    </p>
+  </div>
+</section>
+
 
       <style jsx>{`
         @keyframes scroll {
