@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Home, User, Code, Briefcase, MessageCircle } from 'lucide-react';
+import Gallery from './Gallery';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -281,33 +283,50 @@ const Portfolio = () => {
           transition: 'all 0.1s ease-out'
         }}
       />
+      {/* hero section */}
+        <section id="home" className="min-h-screen flex items-center justify-center relative px-6 pt-20">
+          <div className="text-center max-w-6xl mx-auto">
+            <div 
+              className={`mb-12 transition-all duration-1000 ${
+                visibleSections.has('name') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+              id="name"
+              data-animate
+            >
+              <p className="text-2xl md:text-3xl text-gray-600 mb-4">
+                Hi, this is
+              </p>
 
-      {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative px-6 pt-20">
-        <div className="text-center max-w-6xl mx-auto">
-          <div 
-            className={`mb-12 transition-all duration-1000 ${
-              visibleSections.has('name') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-            id="name"
-            data-animate
-          >
-            <h1 className="text-7xl md:text-9xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 bg-clip-text text-transparent animate-pulse" style={{ fontFamily: 'Arial, sans-serif' }}>
-              Pattapu
-            </h1>
-            <h2 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-gray-700 via-gray-500 to-gray-400 bg-clip-text text-transparent" style={{ fontFamily: 'Arial, sans-serif' }}>
-              Venkateswaramma
-            </h2>
-            <p className="text-2xl md:text-3xl text-gray-600 mb-12">
-              Full Stack Developer & Mobile App Specialist
-            </p>
+              <h1 className="text-7xl md:text-9xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 bg-clip-text text-transparent animate-pulse" style={{ fontFamily: 'Arial, sans-serif' }}>
+                Pattapu
+              </h1>
+              <h2 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-gray-700 via-gray-500 to-gray-400 bg-clip-text text-transparent" style={{ fontFamily: 'Arial, sans-serif' }}>
+                Venkateswaramma
+              </h2>
+
+              <div className="flex flex-col md:flex-row gap-4 justify-center">
+                <a 
+                  href="/assets/documents/Venkateswaramma.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition"
+                >
+                  View CV
+                </a>
+
+                <Link 
+                      to="/gallery"
+                      className="inline-block bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition"
+                    >
+                      Gallery
+                    </Link>
+              </div>
+            </div>
           </div>
-          
-          
-        </div>
-      </section>
+</section>
 
-      {/* About Section */}
+
+      
       <section id="about" className="py-32 px-6 bg-gradient-to-r from-gray-100 to-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 
@@ -337,24 +356,7 @@ const Portfolio = () => {
               When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
               or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on innovative projects.
             </p>
-            {/* <div className="flex flex-wrap justify-center gap-8 text-lg text-gray-600">
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl">🎓</span>
-                <span>Continuous Learner</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl">💻</span>
-                <span>Problem Solver</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl">🚀</span>
-                <span>Innovation Driven</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl">🤝</span>
-                <span>Team Player</span>
-              </div>
-            </div> */}
+            
           </div>
         </div>
       </section>
