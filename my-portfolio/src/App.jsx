@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Home, User, Code, Briefcase, MessageCircle } from 'lucide-react';
-import Gallery from './Gallery';
 import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
@@ -323,10 +322,9 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-</section>
+        </section>
 
-
-      
+      {/* about section */}
       <section id="about" className="py-32 px-6 bg-gradient-to-r from-gray-100 to-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 
@@ -431,100 +429,99 @@ const Portfolio = () => {
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6">
-  <div className="max-w-7xl mx-auto">
-    <h2 
-      className={`text-6xl font-bold text-center mb-10 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent transition-all duration-1000 ${
-        visibleSections.has('projects-title') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
-      id="projects-title"
-      data-animate
-      style={{ fontFamily: 'Arial, sans-serif' }}
-    >
-      Featured Projects
-    </h2>
+        <div className="max-w-7xl mx-auto">
+          <h2 
+            className={`text-6xl font-bold text-center mb-10 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent transition-all duration-1000 ${
+              visibleSections.has('projects-title') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+            id="projects-title"
+            data-animate
+            style={{ fontFamily: 'Arial, sans-serif' }}
+          >
+            Featured Projects
+          </h2>
 
-    <div className="flex justify-center items-center">
-      <div className="w-full max-w-4xl flex">
-        {/* Project Display Area */}
-        <div className="flex-1 relative overflow-hidden">
-          <div className="relative h-96">
-            {projects.map((project, index) => (
-              <div
-                key={project.id}
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                  index === currentProjectIndex ? 'opacity-100' : 'opacity-0'
-                }`}
-              >
-                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden h-full flex">
-                  {/* Image */}
-                  <div className="flex-shrink-0 w-2/3 p-4">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-contain rounded-lg"
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 p-8 flex flex-col justify-center">
-                    <h3
-                      className="text-3xl font-bold mb-4 text-gray-900"
-                      style={{ fontFamily: 'Arial, sans-serif' }}
+          <div className="flex justify-center items-center">
+            <div className="w-full max-w-4xl flex">
+              {/* Project Display Area */}
+              <div className="flex-1 relative overflow-hidden">
+                <div className="relative h-96">
+                  {projects.map((project, index) => (
+                    <div
+                      key={project.id}
+                      className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                        index === currentProjectIndex ? 'opacity-100' : 'opacity-0'
+                      }`}
                     >
-                      {project.title}
-                    </h3>
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.skills.map((skill) => (
-                        <span
-                          key={skill}
-                          className="px-3 py-1 bg-gray-100 rounded-full text-gray-700 text-sm"
-                        >
-                          {skill}
-                        </span>
-                      ))}
+                      <div className="bg-white rounded-2xl shadow-2xl overflow-hidden h-full flex">
+                        {/* Image */}
+                        <div className="flex-shrink-0 w-2/3 p-4">
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-full object-contain rounded-lg"
+                          />
+                        </div>
+
+                        {/* Content */}
+                        <div className="flex-1 p-8 flex flex-col justify-center">
+                          <h3
+                            className="text-3xl font-bold mb-4 text-gray-900"
+                            style={{ fontFamily: 'Arial, sans-serif' }}
+                          >
+                            {project.title}
+                          </h3>
+                          <div className="flex flex-wrap gap-2 mb-6">
+                            {project.skills.map((skill) => (
+                              <span
+                                key={skill}
+                                className="px-3 py-1 bg-gray-100 rounded-full text-gray-700 text-sm"
+                              >
+                                {skill}
+                              </span>
+                            ))}
+                          </div>
+                          <div className="flex space-x-4">
+                            <a
+                              href={project.github}
+                              className="flex items-center space-x-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
+                            >
+                              <Github size={18} />
+                              <span>Repo</span>
+                            </a>
+                            <a
+                              href={project.demo}
+                              className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                            >
+                              <ExternalLink size={18} />
+                              <span>Demo</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex space-x-4">
-                      <a
-                        href={project.github}
-                        className="flex items-center space-x-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
-                      >
-                        <Github size={18} />
-                        <span>Repo</span>
-                      </a>
-                      <a
-                        href={project.demo}
-                        className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                      >
-                        <ExternalLink size={18} />
-                        <span>Demo</span>
-                      </a>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-            ))}
+
+              {/* Vertical Project Indicator Dots */}
+              <div className="ml-8 flex flex-col justify-center items-center space-y-4">
+                {projects.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentProjectIndex(index)}
+                    className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                      index === currentProjectIndex
+                        ? 'bg-gray-900 scale-125'
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Vertical Project Indicator Dots */}
-        <div className="ml-8 flex flex-col justify-center items-center space-y-4">
-          {projects.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentProjectIndex(index)}
-              className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                index === currentProjectIndex
-                  ? 'bg-gray-900 scale-125'
-                  : 'bg-gray-300 hover:bg-gray-400'
-              }`}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-32 px-6 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
