@@ -36,29 +36,46 @@ const portfolioSections = [
       },
     ],
   },
-  {
-    title: "Achievements",
-    items: [
-      {
-        name: "Hackathon Winner",
-        images: ["assets/gallery/photography/1.jpg"],
-      },
-      {
-        name: "Best Photographer",
-        images: ["assets/gallery/photography/3.jpg"],
-      },
-    ],
-  },
+  // {
+  //   title: "Achievements",
+  //   items: [
+  //     {
+  //       name: "Hackathon Winner",
+  //       images: ["assets/gallery/photography/1.jpg"],
+  //     },
+  //     {
+  //       name: "Best Photographer",
+  //       images: ["assets/gallery/photography/3.jpg"],
+  //     },
+  //   ],
+  // },
   {
     title: "Extra-Curricular Activities",
     items: [
       {
-        name: "Public Speaking",
-        images: ["assets/gallery/photography/4.jpg"],
+        name: "Infosys Springboard Pragati: Path to Future Cohort 2",
+        images: [
+          "assets/gallery/extracircullar/infosys/3.png",
+          "assets/gallery/extracircullar/infosys/1.png",
+          "assets/gallery/extracircullar/infosys/2.png"
+
+
+        ],
       },
       {
-        name: "Volunteering",
-        images: ["assets/gallery/photography/2.jpg"],
+        name: "VVIT TEDx 2024 Volunteering",
+        images: [
+          "assets/gallery/extracircullar/tedx/2.png",
+          "assets/gallery/extracircullar/tedx/1.png"
+
+        ],
+      },
+      {
+        name: "ACM VVIT Spardha 2024 Tech Fest",
+        images: [
+          "assets/gallery/extracircullar/spardha/1.png"
+
+        ],
       },
     ],
   },
