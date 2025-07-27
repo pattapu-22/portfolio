@@ -39,8 +39,7 @@ Welcome to my personal portfolio website, where I showcase my technical projects
 │   │   └── gallery/             # Hobby & achievement images
 │   └── index.html
 ├── src/
-│   ├── components/              # Reusable components (if any)
-│   ├── Portfolio.jsx            # Main portfolio content
+│   ├── App.jsx                  # Main portfolio content
 │   ├── Gallery.jsx              # Hobby and achievement gallery
 │   └── App.js                   # App routes
 ├── package.json
