@@ -180,7 +180,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Learning Buddy",
-      image: "/assets/images/1.png",
+      image: "assets/images/1.png",
       skills: ["React","Tailwind", "Firebase", "Node.js"],
       github: "https://github.com/pattapu-22/talentform-LearningBuddy.git",
       demo: "https://learningbuddy-c8654.web.app/"
@@ -188,7 +188,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: "Collegoim - A AI chatbot",
-      image: "/assets/images/2.png",
+      image: "assets/images/2.png",
       skills: ["React","Tailwind CSS"],
       github: "https://github.com/pattapu-22/Colllegium_bot.git",
       //demo: "https://demo-link.com"
@@ -196,7 +196,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "ArgoNXT Next-gen agriculture",
-      image: "/assets/images/3.jpg",
+      image: "assets/images/3.jpg",
       skills: ["Flutter", "Firebase", "Dart"],
       github: "https://github.com/pattapu-22/AgroNXT.git",
       //demo: "https://demo-link.com"
@@ -204,7 +204,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: "Modern Fitness",
-      image: "/assets/images/4.jpg",
+      image: "assets/images/4.jpg",
       skills: ["Flutter", "Firebase", "Dart", "MongoDB"],
       github: "https://github.com/pattapu-22/modern_fitness.git",
       //demo: "https://demo-link.com"
@@ -305,7 +305,7 @@ const Portfolio = () => {
 
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <a 
-                  href="/assets/documents/Venkateswaramma.pdf" 
+                  href="assets/documents/Venkateswaramma.pdf" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition"

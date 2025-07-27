@@ -7,31 +7,31 @@ const portfolioSections = [
       {
         name: "Photography",
         images: [
-          "/assets/gallery/photography/1.jpg",
-          "/assets/gallery/photography/2.jpg",
-          "/assets/gallery/photography/3.jpg",
-          "/assets/gallery/photography/4.jpg",
-          "/assets/gallery/photography/5.jpg",
+          "assets/gallery/photography/1.jpg",
+          "assets/gallery/photography/2.jpg",
+          "assets/gallery/photography/3.jpg",
+          "assets/gallery/photography/4.jpg",
+          "assets/gallery/photography/5.jpg",
         ],
       },
       {
         name: "Cooking",
         images: [
-          "/assets/gallery/cooking/1.jpg",
-          "/assets/gallery/cooking/2.jpg",
-          "/assets/gallery/cooking/3.jpg",
-          "/assets/gallery/cooking/4.jpg",
-          "/assets/gallery/cooking/5.jpg",
+          "assets/gallery/cooking/1.jpg",
+          "assets/gallery/cooking/2.jpg",
+          "assets/gallery/cooking/3.jpg",
+          "assets/gallery/cooking/4.jpg",
+          "assets/gallery/cooking/5.jpg",
         ],
       },
       {
         name: "Drawing",
         images: [
-          "/assets/gallery/drawing/1.jpg",
-          "/assets/gallery/drawing/2.jpg",
-          "/assets/gallery/drawing/3.jpg",
-          "/assets/gallery/drawing/4.jpg",
-          "/assets/gallery/drawing/5.jpg",
+          "assets/gallery/drawing/1.jpg",
+          "assets/gallery/drawing/2.jpg",
+          "assets/gallery/drawing/3.jpg",
+          "assets/gallery/drawing/4.jpg",
+          "assets/gallery/drawing/5.jpg",
         ],
       },
     ],
@@ -41,11 +41,11 @@ const portfolioSections = [
     items: [
       {
         name: "Hackathon Winner",
-        images: ["/assets/gallery/photography/1.jpg"],
+        images: ["assets/gallery/photography/1.jpg"],
       },
       {
         name: "Best Photographer",
-        images: ["/assets/gallery/photography/3.jpg"],
+        images: ["assets/gallery/photography/3.jpg"],
       },
     ],
   },
@@ -54,11 +54,11 @@ const portfolioSections = [
     items: [
       {
         name: "Public Speaking",
-        images: ["/assets/gallery/photography/4.jpg"],
+        images: ["assets/gallery/photography/4.jpg"],
       },
       {
         name: "Volunteering",
-        images: ["/assets/gallery/photography/2.jpg"],
+        images: ["assets/gallery/photography/2.jpg"],
       },
     ],
   },
