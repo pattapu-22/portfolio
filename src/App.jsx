@@ -371,7 +371,7 @@ const Portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 sm:py-20 lg:py-32 px-4 sm:px-6 bg-gradient-to-r from-gray-100 to-gray-50">
+      <section id="about" className="min-h-screen flex items-center justify-center relative px-4 sm:px-6 pt-20">
         <div className="max-w-6xl mx-auto">
           <h2 
             className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-10 sm:mb-16 lg:mb-20 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent transition-all duration-1000 ${
@@ -405,7 +405,7 @@ const Portfolio = () => {
       </section>
 
       {/* Technical Skills Section */}
-      <section id="skills" className="py-16 sm:py-20 lg:py-32 px-4 sm:px-6">
+      <section id="skills" className="min-h-screen flex items-center justify-center relative px-4 sm:px-6 pt-20">
         <div className="max-w-6xl mx-auto">
           <h2 
             className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-10 sm:mb-16 lg:mb-20 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent transition-all duration-1000 ${
@@ -439,7 +439,7 @@ const Portfolio = () => {
       </section>
 
       {/* Soft Skills Section */}
-      <section className="py-16 sm:py-20 lg:py-32 px-4 sm:px-6 bg-gradient-to-r from-gray-100 to-gray-50">
+      <section className="min-h-screen flex items-center justify-center relative px-4 sm:px-6 pt-20">
         <div className="max-w-6xl mx-auto">
           <h2 
             className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-10 sm:mb-16 lg:mb-20 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent transition-all duration-1000 ${
