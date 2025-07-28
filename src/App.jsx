@@ -417,7 +417,7 @@ const Portfolio = () => {
           >
             Technical Skills
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-16">
             {technicalSkills.map((skill, index) => (
               <div
                 key={skill.name}
@@ -451,7 +451,7 @@ const Portfolio = () => {
           >
             Soft Skills
           </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 lg:gap-20">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 sm:gap-12 lg:gap-20">
             {softSkills.map((skill, index) => (
               <div
                 key={skill.name}
